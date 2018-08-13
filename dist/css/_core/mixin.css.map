@@ -1,0 +1,1 @@
+{"version":3,"file":"mixin.css","sources":["_core/mixin.sass"],"sourcesContent":["@mixin nghianguyen($khoaito: #fff,$mauchu: #000, $he: 368px) {\n    min-height: $he;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-align: center;\n    background: $khoaito;\n    color: $mauchu; }\n"],"names":[],"mappings":""}
