@@ -1,0 +1,174 @@
+extends _layout/layout.pug
+block main
+	section.home_slider
+		.container
+			.row
+				.col
+					h1 Hi there! We are the new kids on the block and we build awesome websites and mobile apps.
+					p
+						a.btn.btn-more(href="#") Click here
+	section.home_services
+		.container
+			.row
+				.col
+					h2 SERVICES WE PROVIDE
+					p Lorem ipsum, dolor sit amet consectetur adipisicing elits.
+					.row.mt-3
+						-for(x = 1;x < 5;x++)
+							.col-sm-6.col-md-3
+								img(src="./img/home_icon_"+x+".png", alt="")
+								-if(x==1)
+									h3 Branding
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								-if(x==2)
+									h3 Design
+									p Lorem ipsum dolor sit, amet consectet
+								-if(x==3)
+									h3 DEVELOPMENT
+									p Lorem ipsum dolor sit, amet consectet
+								-if(x==4)
+									h3 ROCKET SCIENCE
+									p Lorem ipsum dolor sit, amet consectet
+	section.home_product
+		.container
+			.row
+				.col
+					h2 MEET OUR BEAUTIFUL
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
+					.col-sm-6.col-md-3
+						img(src="./img/home_product_2.png", alt="")
+						h3.font ANNE HATHAWAY
+						P.text CEO / Maketing Guru
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos unde porro labore maxime cupiditate et dolorum? Placeat, fugit non. Quo rem omnis libero aperiam quas quasi soluta amet accusantium.
+						ul
+							li
+								a.fa.fa-facebook-square(href="#")
+							li
+								a.fa.fa-twitter(href="#")
+							li
+								a.fa.fa-instagram(href="#")
+							li
+								a.fa.fa-envelope(href="#")
+	section.home_product_2
+		.container
+			.row
+				.col
+					h2 WE GOT SKILLS
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
+					.col-sm-6.col-md-3
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
+	section.home_product_3
+		.container
+			.row
+				.col
+					h2 OUR PORTFOLIO
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			.row
+				.col
+					ul
+						li
+							a.btn.btn-more(href="#") All
+						li
+							a.btn.btn-more(href="#") WEB
+						li
+							a.btn.btn-more(href="#") APP
+						li
+							a.btn.btn-more(href="#") ICON
+			.row
+				-for(x = 3;x < 7;x++)
+					.col-md-6
+						figure
+							img.img-fluid(src="./img/home_product_"+x+".png", alt="")
+							-if(x==3)
+								p ISOMETRIC PERSPECTIVE MOCK-UP
+							-if(x==4)
+								p TIME ZONE APP UI
+							-if(x==5)
+								p VIRO MEDIA PLAYERS UI
+							-if(x==6)
+								p BLOG / MAGAZINE FLAT UI KIT
+				.col
+					a.btn.btn-light(href="#") LOAD MORE PROJECTS
+	section.home_about
+		.container
+			.row.mt-5
+				.col
+					h2 WHAT PEOPLE SAY ABOUT US
+					p Lorem ipsum dolor
+			.row.mt-5
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/home_product_2.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							p.left.style CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/home_product_2.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							p.left.style CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/home_product_2.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							p.left.style CEO of Pinterest
+				.col-sm-6
+					.row.mt-5
+						.col-md-4
+							img(src="./img/home_product_2.png", alt="")
+						.col-md-8
+							p.left Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt aut fugit dolore adipisci id veniam nesciunt! Minus,
+							h3.left CHANEL IMAN
+							p.left.style CEO of Pinterest
+	section.home_contact
+		.container
+			.row.mt-5
+				.col
+					h2 GET IN TOUCH
+					P 1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+			.row.mt-3
+				.col-md-2
+				.col-md-4
+					.form-group
+					input#exampleFormControlInput1.form-control(type='text', placeholder='Your name *')
+				.col-md-4
+					.form-group
+					input#exampleFormControlInput1.form-control(type='email', placeholder='Your email *')
+				.col-md-2
+			.row.mt-3
+				.col-md-2
+				.col-md-8
+					.form-group
+					textarea#exampleFormControlTextarea1.form-control(rows='6', placeholder='Your message *')
+				.col-md-2
+			.row.mt-
+				.col
+					p
+					a.btn.btn-more(href='#') SEND MESSAGE

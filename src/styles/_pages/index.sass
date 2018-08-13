@@ -1,0 +1,278 @@
+@import ../_core/nguyen
+
+
+header
+    padding: 40px 0
+    background-color: #87509c
+    nav
+        min-height: 120px
+        display: flex
+        align-items: center
+        text-align: center
+        li
+            display: inline-block
+            margin-top: 15px
+            text-align: center
+            border-radius: 5px
+            padding: 3px 0 6px 0
+            &:hover
+                background: #643a79
+                text-align: center
+            a
+                color: #fff
+                text-decoration: none
+                padding: 0 10px
+                &:hover
+                    text-decoration: none
+                    color: #fff
+        
+.home_slider
+    +nghianguyen($tim ,#fff)
+    h1
+        font-size: 2rem
+        letter-spacing: 1px
+    .btn-more
+        background: #eb7d4b
+        &:hover
+            background: #fff!important
+            color: #000!important
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.275) !important
+.home_services
+    +nghianguyen($ngoc ,#fff)
+    padding: 3rem
+    p
+        color: lighten($ngoc, 20%)
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($ngoc, 7%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+.home_product
+    +nghianguyen(#e7f1f8)
+    padding: 3rem
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($ngoc, 7%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    img
+        min-width: 150px
+        border-radius: 50%
+    .text
+        color: $ngoc
+    .font
+        font-size: 1.25rem
+        padding: 1rem
+    ul
+        display: block
+        margin: 0
+        padding: 0
+        list-style: none
+        text-align: center
+        li
+            display: inline-block
+            background: darken(lighten($ngoc, 53), 55)
+            border-radius: 50%
+            width: 25px
+            height: 25px
+            margin: auto 3px
+            a
+                color: #fff
+.home_product_2
+    +nghianguyen()
+    padding: 3rem
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($ngoc, 7%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    .progress-circle
+        position: relative
+        display: inline-block
+        margin: 1rem
+        width: 140px
+        height: 140px
+        border-radius: 50%
+        background-color: #ebebeb
+        &:after
+            content: ''
+            display: inline-block
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            -webkit-animation: colorload 2s
+            animation: colorload 2s
+        span
+            font-size: 1.5rem
+            color: #8b8b8b
+            position: absolute
+            left: 50%
+            top: 50%
+            display: block
+            width: 120px
+            height: 120px
+            line-height: 120px
+            margin-left: -60px
+            margin-top: -60px
+            text-align: center
+            border-radius: 50%
+            background: #fff
+            z-index: 1
+    .progress-90
+        &:after
+            background-image: linear-gradient(54deg, #30bae7 50%, transparent 50%, transparent), linear-gradient(270deg, #30bae7 50%, #ebebeb 50%, #ebebeb)
+    .progress-75
+        &:after
+            background-image: linear-gradient(0deg, #fc3154 50%, transparent 50%, transparent), linear-gradient(270deg, #fc3154 50%, #ebebeb 50%, #ebebeb)
+    .progress-70
+        &:after
+            background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+    .progress-85
+        &:after
+            background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+
+    @-webkit-keyframes colorload
+        0% 
+            opacity: 0
+            transform: rotate(0deg)
+        100%
+            opacity: 1
+            transform: rotate(360deg)
+.home_product_3
+    +nghianguyen($vang)
+    padding: 3rem
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($ngoc, 7%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    ul
+        list-style: none
+        padding: 10px
+        li
+            display: inline-block
+            a
+                width: 100px
+                background:#ebc985
+                color: #000
+                &:hover
+                    background-color: #fff
+                    transition: .5s
+                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.275) !important
+    .btn-light
+        color: #fff!important
+        background: #17c2a4!important
+        border: none!important
+        height: 50px
+        width: 30%
+        padding: 12.5px!important
+        &:hover
+            background: #fff!important
+            width: 30%!important
+            color: #000!important
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.275) !important
+.home_about
+    +nghianguyen(#d74680)
+    padding: 3rem
+    color: #fff
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: lighten($ngoc, 40%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    img
+        max-width: 120px
+        border-radius: 50%
+    .left
+        text-align: left
+    .style
+        color: #ffdd99
+.home_contact
+    +nghianguyen($xanh)
+    padding: 3rem
+    h2
+        h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($ngoc, 30%)
+            width: 55px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    .form-control
+        color: #fff!important
+        background-color: #273a71!important
+        border: none!important
+        margin-top: 10px!important
+        min-height: 50px!important
+    .btn
+        padding: 15px 60px
+        background-color: #30bae7
+        color: #fff
+        margin-top: 20px
+        &:hover
+            background: #fff
+            color: #000
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.275)
+.footer
+    background-color: #344b8e
+    padding: 40px 0
+    .footer_box
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        color: #fff
+        width: 100%
+        p
+            padding: 0px 1rem
+            margin-bottom: 0
+            font-size: 1.1rem
+            font-weight: bold
+            &:hover
+                color: #30bae7
